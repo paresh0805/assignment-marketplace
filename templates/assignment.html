@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<article class="detail"><span>{{item.subject}}</span><h1>{{item.title}}</h1><p>{{item.description}}</p><p>File: {{item.filename}}</p><h2>₹{{'%.2f'|format(item.price)}}</h2><a class="button" href="{{url_for('buy',aid=item.id)}}">Buy / Request Download</a></article>{% endblock %}
