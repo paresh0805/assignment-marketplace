@@ -1,0 +1,15 @@
+[project]
+name = "assignment-marketplace"
+version = "1.0.0"
+requires-python = ">=3.12"
+dependencies = [
+    "Flask",
+    "Flask-WTF",
+    "google-api-python-client",
+    "google-auth",
+    "google-auth-httplib2",
+    "gunicorn"
+]
+
+[tool.vercel]
+entrypoint = "app:app"
